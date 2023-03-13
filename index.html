@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css' integrity='sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==' crossorigin='anonymous'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css' integrity='sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==' crossorigin='anonymous'/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="filter">
+            <div class="filter-item">
+                <select name="floor" class="form-select" id="">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+            </div>
+            <div class="filter-item">
+                <select name="type" class="form-select" id="">
+                    <option value="standart">Standart</option>
+                    <option value="deluxe">Deluxe</option>
+                    <option value="vip">VIP</option>
+                </select>
+            </div>
+            <div class="filter-item d-flex align-items-center">
+                <label for="min">Min</label>
+                <input class="form-control" type="text" id="min" placeholder="min">
+                <label for="max">Max</label>
+                <input class="form-control" type="text" id="max" placeholder="max">
+            </div>
+            <div class="filter-item">
+                <button class="btn btn-dark" id="btn">New Room</button>
+            </div>
+        </div>
+        <div class="info-table">
+            <table class="table table-bordered table-dark table-hover">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>No</th>
+                        <th>Floor</th>
+                        <th>Type</th>
+                        <th>User</th>
+                        <th>Price (for day)</th>
+                        <th>Enter Day</th>
+                        <th>Exit Day</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>#</td>
+                        <td>No</td>
+                        <td>Floor</td>
+                        <td>Type</td>
+                        <td>User</td>
+                        <td>Price (for day)</td>
+                        <td>Enter Day</td>
+                        <td>Exit Day</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="general-info"></div>
+    </div>
+
+    <div class="modal-menu">
+        <div class="card">
+            <div class="card-header">
+              Featured
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                <form>
+                    <div class="no-group">
+                        <label for="no">No</label>
+                        <input type="text" id="no" class="form-control">
+                        <small></small>
+                    </div>
+                    <div class="floor-group">
+                        <label for="floor">Floor</label>
+                        <input type="text" id="floor" class="form-control">
+                        <small></small>
+                    </div>
+                    <div class="type-group">
+                        <label for="type">Type</label>
+                        <select name="type" class="form-select" id="type">
+                            <option value="standart">Standart</option>
+                            <option value="deluxe">Deluxe</option>
+                            <option value="vip">VIP</option>
+                        </select>
+                        <small></small>
+                    </div>
+                    <div class="price-group">
+                        <label for="price">Price</label>
+                        <input type="text" id="price" class="form-control">
+                        <small></small>
+                    </div>
+                    
+                </form>
+              </p>
+              <button class="btn btn-danger" id="cancel">Cancel</button>
+              <button class="btn btn-primary">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

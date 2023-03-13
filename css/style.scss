@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr 7fr 1fr;
+}
+
+.filter{
+    background-color: aquamarine;
+    display: flex; justify-content: space-around;
+    align-items: center;
+}
+
+.general-info{
+    background-color: pink;
+}
+
+.info-table{
+    background-color: darkturquoise;
+}
+
+.modal-menu{
+    position: absolute;
+    top: -400px;
+    left: 50%;
+    transition: .3s linear;
+    z-index: 5;
+    transform: translate(-50%, -50%);
+}
+
+.modal-menu{
+    width: 700px;
+}
+
+.modal-open{
+    top: 50%;
+}
+
+.myErrorInput{
+    border-color: red !important;
+}
